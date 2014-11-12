@@ -1,7 +1,7 @@
 <!-- TOP-上方選單 -->
 <nav class="navbar-fixed-top">
 	<div class="navbar-logo">
-			<%= link_to(image_tag("../assets/logo.png"), root_url ) %>
+			<%= link_to(image_tag("logo.png"), root_path) %>
 	</div>
 	<% if user_signed_in? %>
 	<div class="navbar-right">
@@ -13,7 +13,7 @@
 				<ul class="dropdown-menu" ><!-- role="menu" aria-labelledby="dLabel" -->
 	        <li><%= link_to '帳號管理', edit_user_registration_path %></li>
 	        <li><%= link_to '我的菜單', users_url %></li>
-	        <li><a href="#">Q&A</a></li>
+	        <li><%= link_to('Q&A', '') %><li>
 	        <li class="divider"></li>
 	        <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
 	      </ul>

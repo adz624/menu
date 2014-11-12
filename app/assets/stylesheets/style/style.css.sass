@@ -1,0 +1,519 @@
+body
+  text-align: center
+  background: asset-url('fabric_of_squares_gray.png', image)
+
+.navbar-fixed-top
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  height: 65px
+  background-color: #FFF
+  margin: 0
+  padding: 0
+  z-index: 101
+  min-height: 0px
+  -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15)
+  -moz-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15)
+
+.navbar-logo
+  padding: 0 30px
+  margin: 0
+  float: left
+  height: 65px
+  display: table
+  a
+    display: table-cell
+    vertical-align: middle
+
+.navbar-right
+  float: right !important
+  padding: 0 25px 0px 0px
+  margin: 0
+
+/*未登入*/
+
+.no-login
+  ul li
+    list-style: none
+    position: relative
+    float: left
+    z-index: 1
+    line-height: 65px
+    border: 1px solid transparent
+    border-top: 0
+    border-bottom: 0
+    -webkit-transition: all 0.2s linear
+    transition: all 0.2s linear
+    a
+      padding: 0px 15px
+      color: #373e4a
+      text-decoration: none
+      display: block
+  a:hover
+    padding: 0px 15px
+    color: #373e4a
+    text-decoration: none
+  ul li:hover
+    background-color: #f8f8f8
+
+/*已登入*/
+
+#user
+  position: relative
+  img
+    width: 40px
+    -webkit-border-radius: 5px
+    border-radius: 20px
+  a
+    display: block
+    color: #666
+    padding: 0px
+    line-height: 65px
+    text-decoration: none
+  .dropdown-menu
+    right: 0px
+    left: inherit
+    border: 1px solid #E0E0E0
+    a
+      line-height: 28px
+      color: #999
+      &:hover
+        background-color: #fff
+        color: #666
+
+/**************
+ *  上傳菜單-固定
+ ****************/
+
+.upload-menu
+  position: fixed
+  top: 210px
+  width: 120px
+  background-color: #fff
+  padding: 10px 0px
+  font-size: 14px
+  line-height: 22px
+  border-radius: 0px 5px 5px 0px
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2)
+  z-index: 2
+  a
+    margin-top: 5px
+
+.upload-menu-form
+  position: fixed
+  display: none
+  background-color: rgb(255, 255, 255)
+  width: 220px
+  color: #666
+  top: 220px
+  left: 121px
+  padding: 10px
+  overflow: hidden
+  border: 1px solid #5cb85c
+  -webkit-border-radius: 0px 5px 5px 5px
+  border-radius: 0px 5px 5px 5px
+  box-shadow: 2px 2px 1px rgba(100, 100, 100, 0.2)
+  z-index: 1
+
+.upload-menu-input-add
+  width: 83px
+
+.upload-menu-form .upload-picture
+  margin-bottom: 9px
+  a
+    display: block
+    height: 50px
+    line-height: 50px
+    color: #797979
+    background-color: #E7E7E7
+    border: 1px solid #cccccc
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    text-decoration: none
+    &:hover
+      background-color: #E2E2E2
+
+/*********
+ *  置中區塊
+ ***********/
+
+#page-container
+  margin-top: 65px
+  width: 92%
+  background-color: none
+  margin: 0 auto
+
+/*上方文字*/
+
+#content-top-text
+  position: relative
+  margin-top: 100px
+  padding: 0px
+  font-size: 18px
+  line-height: 24px
+  color: #666
+
+/*上方搜尋*/
+
+#content-top-search
+  position: relative
+  padding: 15px 0px
+  select
+    margin-top: 10px
+
+/*內容-抽菜單*/
+
+#lottery-menu-content
+  position: relative
+  width: 70%
+  height: 440px
+  text-align: left
+  margin: 0 auto
+
+.lottery-menu
+  position: relative
+  margin-bottom: 10px
+  max-height: 230px
+  overflow: hidden
+  border-radius: 5px
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3)
+  img
+    width: 100%
+    min-height: 230px
+  &:hover .lottery-menu-pic
+    opacity: 0.7
+    /*滑入-圖片透明*/
+
+/*.lottery-menu:hover{
+ *  background-color: rgb(239, 196, 102);
+ *}*/
+
+.collect-slide
+  /*滑入-出現區塊*/
+  position: absolute
+  top: 5px
+  right: 10px
+  opacity: 0
+  -webkit-transition: all 0.1s linear
+  transition: all 0.1s linear
+  .fa-stack
+    color: #d9534f
+    &:hover
+      color: #d2322d
+
+.lottery-menu
+  &:hover .collect-slide
+    opacity: 1
+  .modal-footer a
+    color: #d9534f
+    &:hover
+      color: #d2322d
+
+/*********
+ *  我的菜單
+ ***********/
+
+/*上方選擇區塊*/
+
+#content-top-choose
+  position: relative
+  margin-top: 65px
+  padding: 25px
+  a
+    margin: 0px 5px
+
+/*上傳區塊*/
+
+#usermenu-upload-fixed
+  position: fixed
+  top: 90px
+  background-color: #D20000
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2)
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2)
+  -webkit-border-radius: 0px 5px 5px 0px
+  border-radius: 0px 5px 5px 0px
+  z-index: 1
+  a
+    color: #fff
+    display: block
+    line-height: 20px
+    padding: 15px
+    font-size: 14px
+    &:hover
+      text-decoration: none
+  &:hover
+    background-color: #d2322d
+  .upload-menu-form
+    display: none
+    top: 142px
+    left: 0px
+    border: 1px solid #d9534f
+    a
+      color: #000
+      line-height: 42px
+
+/*使用者的菜單*/
+
+#usermenu-content
+  position: relative
+
+.usermenu-block
+  position: relative
+  background-color: #FFF
+  overflow: hidden
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  margin-bottom: 15px
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+  .usermenu-block-text
+    display: block
+    padding: 5px
+  img
+    width: 100%
+
+.usermenu-slide
+  position: absolute
+  top: 0px
+  right: 0px
+  padding: 5px
+  opacity: 0
+  -webkit-transition: all 0.1s linear
+  transition: all 0.1s linear
+  .fa-stack
+    color: #d9534f
+    &:hover
+      color: #bd362f
+
+.usermenu-block
+  &:hover
+    .menu-mask img
+      opacity: 0.8
+    .usermenu-slide
+      opacity: 1
+  .modal-footer a
+    color: #d9534f
+    &:hover
+      color: #d2322d
+
+.usermenu-edit
+  position: absolute
+  background-color: #fff
+  width: 950px
+  max-height: 600px
+  top: 95px
+  left: 50%
+  margin-left: -490px
+  border-radius: 6px
+  img
+    width: 100%
+    float: left
+
+.usermenu-edit-form
+  float: right
+  width: 450px
+  height: 200px
+  text-align: left
+  font-size: 14px
+  padding: 20px 0px
+
+.modal-usermenu-edit
+  position: fixed
+  z-index: 1051
+  overflow: auto
+  display: block
+  top: 0px
+  left: 0px
+  right: 0px
+  bottom: 0px
+  background-color: rgba(0, 0, 0, 0.5)
+  /*position: fixed;
+   *top: 50%;
+   *left: 50%;
+   *z-index: 1051;
+   *overflow: auto;
+   *width: 1000px;
+   *margin: -250px 0 0 -500px;
+   *background-color: #ffffff;
+   *border: 1px solid #999;
+   *border: 1px solid rgba(0, 0, 0, 0.3);
+   *-webkit-border-radius: 6px;
+   *-moz-border-radius: 6px;
+   *border-radius: 6px;
+   *-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+   *-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+   *box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+   *-webkit-background-clip: padding-box;
+   *-moz-background-clip: padding-box;
+   *background-clip: padding-box;*/
+
+/**************
+ *  登入/註冊頁面
+ ****************/
+
+#login-container
+  width: 960px
+  height: 580px
+  margin: 0 auto
+  margin-top: 150px
+
+.login-header
+  padding: 20px 0px
+
+#login-content
+  position: absolute
+  left: 50%
+  margin-left: -190px
+
+.login-remeber
+  position: absolute
+  bottom: 0px
+  right: 55px
+
+/**************
+ *  帳戶管理頁面
+ ****************/
+
+#settings-container
+  /*width: 960px;*/
+  margin: 0 auto
+  margin-top: 100px
+
+#settings-content
+  position: relative
+  left: 50%
+  margin-left: -190px
+
+#settings-header
+  padding: 20px 0px
+
+#settings-content input
+  text-align: center
+
+#cancel-account
+  position: relative
+  width: 600px
+  left: 50%
+  margin-left: -300px
+  margin-top: 485px
+  padding-bottom: 50px
+  border-top: 1px solid #ccc
+  a
+    font-size: 14px
+    margin-bottom: 5px
+    width: 100px
+  span
+    display: block
+
+/********
+ *   Q&A
+ **********/
+
+#question-container
+  height: 630px
+  margin: 0 auto
+  margin-top: 100px
+  padding: 0px 50px
+
+#question-content
+  position: relative
+  /*left:50%;
+   *margin-left: -350px;
+
+/********
+ *   頁腳
+ **********/
+
+#page-footer
+  position: relative
+  width: 100%
+  padding: 0px
+  height: 50px
+  border-top: 1px solid #ddd
+  bottom: 0px
+  li
+    list-style: none
+    float: left
+    line-height: 50px
+    padding: 0px 10px
+  a
+    display: block
+    color: #999
+    text-decoration: none
+    &:hover
+      color: #666
+      text-decoration: none
+
+.footer-left
+  float: left
+
+.footer-right
+  float: right
+  margin-right: 30px
+
+/********
+ *   廣告
+ **********/
+
+.ad-fixed-left
+  position: fixed
+  top: 310px
+  width: 120px
+  height: 210px
+  background-color: #FFF
+  font-size: 14px
+  line-height: 28px
+  border-radius: 0px 5px 5px 0px
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2)
+  overflow: hidden
+  z-index: 1
+  img
+    width: 120px
+
+.ad-back
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1040
+  background-color: rgba(0, 0, 0, 0.5)
+  -webkit-transition: all 0.1s linear
+  transition: all 0.1s linear
+  opacity: 0
+  visibility: hidden
+
+.ad-content
+  margin-top: 50px
+
+.ad-close
+  position: absolute
+  font-size: 26px
+  margin-left: -23px
+  background-color: rgba(232, 232, 232, 0.8)
+  color: #7B7B7B
+  padding: 5px
+
+.ad-btn:hover .ad-back
+  visibility: visible
+  opacity: 1
+
+/********
+ *   其他
+ **********/
+/*按鈕-紅色*/
+
+.btn-red
+  color: #fff
+
+.float-r
+  float: right
+  margin-left: 6px
+
+/*如果使用者之視窗寬度 <= 1400px，將會再載入這裡的 CSS。*/
+@media screen and (max-width: 1400px)
+  #lottery-menu-content
+    width: 77%

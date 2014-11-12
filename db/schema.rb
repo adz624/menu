@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20141110085502) do
   end
 
   create_table "photos", force: true do |t|
-    t.integer  "album_id"
     t.string   "name"
     t.string   "city"
     t.string   "zone"
