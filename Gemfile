@@ -9,7 +9,11 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'mysql2'
 gem 'simple_form'
-gem "twitter-bootstrap-rails"
+gem "bootstrap-sass-rails"
+gem "font-awesome-rails"
+gem 'masonry-rails'
+gem 'masonry-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
