@@ -5,6 +5,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.string :city
       t.string :zone
       t.string :image
+      t.string :status
 
       t.timestamps
     end
