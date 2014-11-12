@@ -1,0 +1,124 @@
+<!-- 上傳菜單 -->
+	<div id="usermenu-upload-fixed">
+		<a href="">上傳菜單</a>
+	</div>
+
+	<!-- 置中區塊 -->
+	<div id="page-container">
+		<!-- 上方-選擇項目 -->
+		<div id="content-top-choose">
+			<a href="" class="btn btn-primary">我的菜單</a>
+		</div>
+		<div id="usermenu-content">
+			<div class="row">
+				<!-- 使用者菜單 -->
+				<div class="span3 usermenu-block">
+					<!-- 使用者菜單-上方圖片,連結 -->
+					<a class="menu-mask" data-toggle="modal" href="#modal-usermenu-1">
+						<img src="http://www.reyesbarbecue.net/wp-content/uploads/2012/04/menu-appetizers-etc-april.jpg">
+					</a>
+
+					<!-- 使用者菜單-下方文字 -->
+					<span class="usermenu-block-text">
+						<h3>123</h3>
+						台南市東區
+					</span>
+
+					<!-- 滑入區塊 -->
+					<div class="usermenu-slide">
+						<!-- 滑入-收藏 -->
+						<a href="">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+						<!-- 滑入-編輯 -->
+						<a href="#modal-usermenu-edit-1" data-toggle="modal" >
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</div>
+
+					<!-- 彈出區塊 -->
+					<!-- 彈出菜單 -->
+					<div id="modal-usermenu-1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-header">
+					    <a class="close" data-dismiss="modal">×</a>
+					    <!-- 收藏 -->
+					    <h2>TEA SHOP</h2>
+					    <span>台南市中西區</span>
+					  </div>
+					  <div class="modal-body">
+					    <img src="http://www.reyesbarbecue.net/wp-content/uploads/2012/04/menu-appetizers-etc-april.jpg">
+					  </div>
+					  <div class="modal-footer">
+					    <a class="float-r heart" href="#modal-usermenu-edit-1" data-toggle="modal" >
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					    <a class="float-r facebook" href="">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					    <a class="float-r twitter" href="">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					  </div>
+					</div> <!-- 彈出菜單 End -->
+
+					<!-- 彈出-編輯菜單 -->
+					<div id="modal-usermenu-edit-1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-usermenu-edit">
+						<div class="modal-body usermenu-edit">
+							<div class="row">
+								<a class="close" data-dismiss="modal">×</a>
+								<div class="span6">
+									<img src="http://www.reyesbarbecue.net/wp-content/uploads/2012/04/menu-appetizers-etc-april.jpg">
+								</div>
+								<div class="usermenu-edit-form span6">
+									<form>
+										<div class="login-header">
+											<h2>TEA SHOP</h2>
+										</div>
+										<div class="control-group">
+										    <label class="control-label" for="inputshopname">修改店家名稱</label>
+										    <div class="controls">
+										      <input type="text" id="inputshopname" class="span6" placeholder="TEA SHOP">
+										    </div>
+										</div>
+										<div class="control-group">
+										    <label class="control-label" for="inputshopadd">修改地址</label>
+										    <div class="controls">
+										      <input type="password" id="inputshopadd" class="span6" placeholder="台南市中西區">
+										    </div>
+										</div>
+										<div class="control-group">
+										    <label class="control-label" for="inputshopadd">修改描述</label>
+										    <div class="controls">
+										      <textarea class="span6" rows="3">1234567898/</textarea>
+										    </div>
+										</div>
+										<button type="submit" class="btn btn-danger float-r">送出</button>
+										<button class="btn float-r" data-dismiss="modal" aria-hidden="true">關閉</button>
+									</form>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div> <!-- 彈出-編輯菜單 End -->
+				</div>
+				<!-- 使用者菜單 結束 -->
+				</div>
+			</div>
+		</div>
+	</div>

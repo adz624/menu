@@ -1,0 +1,6 @@
+<% @albums.each do |i| %>
+	縣/市:<%= link_to(i.city, admin_album_path(i)) %>
+	<%= link_to('編輯', edit_admin_album_path(i)) %>
+	<%= link_to('刪除', admin_album_path(i), :method => 'delete') %><p>
+<% end %>
+<%= link_to('新增', new_admin_album_path) %> 

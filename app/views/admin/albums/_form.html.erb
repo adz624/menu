@@ -1,0 +1,4 @@
+<%= form_for [:admin, @album] do |f| %>
+	縣/市:<%= f.text_field :city %>
+	<%= f.submit '送出' %>
+<% end %>
