@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: menu_development
+  pool: 15
+  username: root
+  password:
+  host: localhost
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: menu_test
+  pool: 15
+  username: root
+  password: 
+  host: localhost
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: menu_production
+  pool: 50
+  username: root
+  password:
+  host: localhost
